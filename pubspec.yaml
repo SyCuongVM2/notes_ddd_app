@@ -41,6 +41,14 @@ dependencies:
   another_flushbar: ^1.10.24
   uuid: ^3.0.5
   auto_route: ^2.4.2
+  kt_dart: ^0.9.1
+  json_annotation: ^4.1.0
+  cloud_firestore: ^2.5.3
+  rxdart: ^0.27.2
+  flutter_hooks: ^0.18.0
+  provider: ^6.0.1
+  flutter_slidable: ^0.6.0
+  implicitly_animated_reorderable_list: ^0.4.1
 
 dev_dependencies:
   flutter_test:
@@ -49,6 +57,7 @@ dev_dependencies:
   freezed: ^0.14.5
   injectable_generator: ^1.5.2
   auto_route_generator: ^2.4.1
+  json_serializable: ^5.0.2
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

@@ -1,7 +1,7 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../injection.dart';
 import '../../routes/router.gr.dart';
 import '../../../application/auth/auth_bloc.dart';
 
@@ -15,11 +15,10 @@ class SplashPage extends StatelessWidget {
         state.map(
           initial: (_) {}, 
           authenticated: (_) {
-            print('Authenticated!');
+            getIt<AppRouter>().replace(const NotesOverviewRoute());
           }, 
           unauthenticated: (_) {
-            AutoRouter.of(context);
-            return context.router.replace(const SignInRoute());
+            getIt<AppRouter>().replace(const SignInRoute());
           }
         );
       },
